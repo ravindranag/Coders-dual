@@ -34,6 +34,7 @@ const Login = () => {
 
 
     return (
+        <Grid item lg={4} md={6} xs={10}>
         <Card elevation={10} sx={{height:500,borderRadius:3}}>
             <h1 style={{textAlign:"center"}}>Sign In</h1>
             <Grid container sx={{height:"70%"}} rowGap={3} justifyContent="center" alignItems="center">
@@ -73,6 +74,7 @@ const Login = () => {
 
             </Grid>
         </Card>
+        </Grid>
     );
 }
 
