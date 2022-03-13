@@ -1,24 +1,14 @@
-import { 
-  Router,
-  Routes,
-  Route,
-} from 'react-router-dom';
-import Login from "./components/Login";
-import Editor from "./components/Editor";
+import Login from "./pages/Login";
 import './App.css';
 import { Grid } from '@mui/material';
 
 function App() {
   return (
-    // <Router>
-    //   <Routes>
-    //     <Route path='/login' element={<Login />} />
-    //     <Route path='/editor' element={<Editor />} />
-    //   </Routes>
-    // </Router>
-    <Grid >
-    <Login />
-    {/* <Editor /> */}
+    <Grid container sx={{height:"100vh"}} justifyContent="center" alignContent="center">
+      
+      <Grid item lg={4} md={6} xs={10}><Login />
+      </Grid>
+
     </Grid>
   );
 }
